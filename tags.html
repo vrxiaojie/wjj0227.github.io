@@ -7,7 +7,7 @@ title: Tags
 {% assign alltags =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by_exp: "tag","tag" %}
 
 <p>
-  Articles on similar topics are grouped together by tags. Click on any tag to find all the articles 'tagged' with that tag.
+  类似主题的文章按标签分组在一起。单击任何标签来查找所有带有该标签的“标记”文章。
 </p>
 <ul class="tag-box">
     {% for tag in alltags %}
