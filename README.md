@@ -1,37 +1,92 @@
-## Welcome to GitHub Pages
+# Unmaintained - Blog moved to Wordpress
+I've moved my blog to wordpress and ported this theme to Wordpress - [https://github.com/abhn/Elementary-Wordpress](https://github.com/abhn/Elementary-Wordpress).
 
-You can use the [editor on GitHub](https://github.com/wjj0227/wjj0227.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Due to a crunch of time, updates here may or may not happen. Please check the Wordpress theme for updates.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Relevant blog article: [Life Goes Full Circle – Blog Back To WordPress](https://www.nagekar.com/2021/01/life-goes-full-circle-blog-back-to-wordpress.html)
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Elementary
+This is my personal blog's Jekyll template that I've been optimizing for performance, accessibility, usability, readability and simplicity in general. 
 
-```markdown
-Syntax highlighted code block
+I personally do not approve of personal blogs bloated with hundreds of kilobytes of trackers and analytics code, and hence, this is an attempt at creating something that I'd be comfortable with using on my website.
 
-# Header 1
-## Header 2
-### Header 3
+### Performance
+![](./tmp/perf-2.jpg)
 
-- Bulleted
-- List
+Images from my website (clockwise from top left)
 
-1. Numbered
-2. List
+- Perfect **100 Google Page Speed score** on both mobile and desktop
+- **Kindle's experimental browser** running the theme
+- Median load time (From Cloudflare) is **less than a second**
+- **100% cached** by Cloudflare CDN
 
-**Bold** and _Italic_ and `Code` text
+### Dark mode
+![](./tmp/dark-mode.gif)
 
-[Link](url) and ![Image](src)
+Note: Dark mode requires JavaScript
+
+### Scroll progress
+![](./tmp/scroll-progress.gif)
+
+Note: Scroll progress requires JavaScript
+
+### Demo
+<a href="https://elementary-jekyll.github.io/">https://elementary-jekyll.github.io/</a>
+
+### Features
+- Lightweight, <10KB CSS, <3KB (optional) JavaScript + 15KB Open Sans font file + your content
+- Highly accessible with semantic HTML
+- Structured data ([schema.org](https://schema.org)) pre-added for blog posts
+- Dark mode (requires JavaScript for toggling class and saving user preference in cookies)
+- Reading progress slider on top (requires JavaScript)
+- JavaScript is optional (turn it off in `_config.yml`)
+- No request made to any third party
+- Any much more...
+
+### Installation (Prerequisite: A working Jekyll site)
+- If you don't have a Jekyll site, read up how to create one here: [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/)
+- Add Elementary repository as a submodule to your Jekyll blog by running the following command.
 ```
+git submodule add git@github.com:abhn/Elementary.git elementary
+```
+- Tell Jekyll it has to use Elementary as theme by adding the following to your `_config.yml` (in case you're wondering where, just add it to the bottom on a new line). 
+```
+theme: elementary
+```
+- Add the following to your `Gemfile`
+```
+source 'https://rubygems.org'
+gem 'elementary', path: 'elementary'
+```
+- Run `bundle install` command in your project directory and make sure there are no errors
+- Add `./elementary` to `exclude` section of `_config.yml` so that the theme's files aren't compiled into the final site by adding the following to your `_config.yml` (if `exclude` key exists, just add a new item to it)
+```
+exclude:
+  - ./elementary
+```
+- Run command `bundle exec jekyll serve` to run local server (open browser to [http://localhost:4000](http://localhost:4000) to view the site).
+- Run command `bundle exec jekyll build` to output a production build to the `_site` directory.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Customization
+- You're free to make any edits to the theme's files in the submodule. You can also `git pull origin master` from the submodule directory to update the theme in case I push updates, but you don't have to.
+- In `_config.yml`, you can add new collections (groups of new content, so blog posts, news, pictures could all be their own collections with separate listing on index page)
 
-### Jekyll Themes
+### Credits
+- Eric S Raymond (http://www.catb.org/~esr/hacker-emblem/glider.png) for the favicon
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wjj0227/wjj0227.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### License
+GNU GENERAL PUBLIC LICENSE Version 3
 
-### Support or Contact
+### Going v1.0
+When I started with the [original project](https://github.com/abhn/Elementary/releases/tag/v0.1) around 2 years ago, my goal was to get rid of all that unnecessary code and progressively add only the most essential bits. 
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+I feel like the theme is in good enough shape right now that I can call it a v1.0
+
+-----
+
+### Original inspiration
+
+I recently read in a blog post that a personal blog has to be fast and lean. There's no reason for a personal blog to be bloated and take 2 seconds to load. That was when I reviewed my own blog code and started analyzing. I discovered that I was loading jQuery just for another jQuery plugin which just helped the images and videos to be mobile responsive. That was some 40KB of overhead, 2 additional requests which could have been prevented with just a `max-width: 100%` attribute to the culprit elements. Similarly, there was Disqus which loaded tonnes of scripts along with its own Google Analytics script. 
+
+I went on stripping weight from the code, and was left with something what you see here. Few extra CSS tweaks and Tadaa!
