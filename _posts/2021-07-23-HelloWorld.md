@@ -1,6 +1,6 @@
 ---
 title: 2021-07-23-HelloWorld
-tags: 文章,随笔,记录
+tags: text
 category: /小书匠/日记/2021-07
 renderNumberedHeading: true
 grammar_cjkRuby: true
