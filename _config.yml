@@ -10,11 +10,11 @@ collections:
     title: 折腾笔记
     default_open: true
     output: true
-news:
+  news:
     title: 随笔小记
     default_open: false
     output: true
-others:
+  others:
     title: Others
     default_open: false
     output: true
