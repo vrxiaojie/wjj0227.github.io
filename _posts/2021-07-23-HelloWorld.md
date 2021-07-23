@@ -11,5 +11,10 @@ grammar_cjkRuby: true
 这个主题还不错：[主题](http://jekyllthemes.org/themes/elementary/){:target="_blank"}    
 简洁，清晰，分类明确。
 
-``` print
+``` 
+print
+```
+
+``` javascript
+enter code here
 ```
