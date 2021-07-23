@@ -1,6 +1,5 @@
-title : Elementary - Jekyll Blog Theme
-name: 'Elementary Jekyll Theme'
-description: 'Simple, light weight, responsive jekyll theme for hackers'
+title : 'VR小杰的个人Blog'
+name: 'VR小杰的个人Blog'
 
 markdown: kramdown
 highlighter: rouge
@@ -17,11 +16,11 @@ featured_posts:
 
 collections:
   news:
-    title: News
+    title: 随笔小记
     default_open: false
     output: true
   posts:
-    title: Essays
+    title: 折腾笔记
     default_open: true
     output: true
 
@@ -29,12 +28,12 @@ defaults:
   - scope:
       type: posts
     values:
-      title: Essays
+      title: 折腾笔记
       permalink: /post/:title
   - scope:
       type: news
     values:
-      title: News
+      title: 随笔小记
       permalink: /news/:title
 
 plugins:
