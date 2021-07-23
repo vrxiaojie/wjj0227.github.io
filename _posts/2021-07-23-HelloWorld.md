@@ -1,5 +1,6 @@
 ---
 title: 2021-07-23-HelloWorld
+tags: 文章,随笔,记录
 category: /小书匠/日记/2021-07
 renderNumberedHeading: true
 grammar_cjkRuby: true
@@ -8,4 +9,4 @@ grammar_cjkRuby: true
 参考的链接：[教程](https://www.cnblogs.com/wxyww/p/xiaoshujiang.html)  
 我觉得主要难点在上传theme。经常的报错，这个主题还不错：
 [主题](http://jekyllthemes.org/themes/elementary/)  
-简洁，清晰，分类明确。
+这个主题：简洁，清晰，分类明确。
