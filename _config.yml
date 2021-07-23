@@ -5,25 +5,16 @@ markdown: kramdown
 highlighter: rouge
 javascript_enabled: true
 
-featured_posts_title: Unrelated
-featured_posts:
-  - url: '#'
-    title: 'Featured post #1'
-  - url: '#'
-    title: 'Featured post #2'
-  - url: '#'
-    title: 'Featured post #3'
-
 collections:
-  news:
-    title: 随笔小记
-    default_open: false
-    output: true
   posts:
     title: 折腾笔记
     default_open: true
     output: true
-
+news:
+    title: 随笔小记
+    default_open: false
+    output: true
+    
 defaults:
   - scope:
       type: posts
