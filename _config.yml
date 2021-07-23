@@ -29,12 +29,12 @@ defaults:
       type: news
     values:
       title: 随笔小记
-      permalink: /_news/:title
+      permalink: /news/:title
   - scope:
       type: others
     values:
       title: Others
-      permalink: /_others/:title
+      permalink: /others/:title
  
 
 plugins:
