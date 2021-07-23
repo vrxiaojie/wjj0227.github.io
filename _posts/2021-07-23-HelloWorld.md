@@ -13,8 +13,9 @@ grammar_cjkRuby: true
 
 ``` 
 print
-```
-
-``` javascript
-enter code here
+```  
+这是测试
+``` 
+cd z:\  
+ls  
 ```
