@@ -10,14 +10,7 @@ collections:
     title: 折腾笔记
     default_open: true
     output: true
-  news:
-    title: 随笔小记
-    default_open: false
-    output: true
-  others:
-    title: Others
-    default_open: false
-    output: true
+  
     
 defaults:
   - scope:
@@ -25,16 +18,7 @@ defaults:
     values:
       title: 折腾笔记
       permalink: /post/:title
-  - scope:
-      type: news
-    values:
-      title: 随笔小记
-      permalink: /news/:title
-  - scope:
-      type: others
-    values:
-      title: Others
-      permalink: /others/:title
+
  
 
 plugins:
