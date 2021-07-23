@@ -10,12 +10,3 @@ grammar_cjkRuby: true
 我觉得主要难点在上传theme：经常报错、页面错乱。  
 这个主题还不错：[主题](http://jekyllthemes.org/themes/elementary/){:target="_blank"}    
 简洁，清晰，分类明确。
-
-``` 
-print
-```  
-这是测试
-``` 
-cd z:\  
-ls  
-```
