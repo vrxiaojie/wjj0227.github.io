@@ -13,11 +13,12 @@ body.dark  {
     color: var(--color__gray--light);
   }
   blockquote {
-    border-left: 5px solid var(--color__red);
-    color: var(--color__blue) 
+    border-left: 5px solid var(--color__gray--light);
+    color: var(--color__gray--light) 
   }
   code, pre {
     color: var(--color__white);
+    background-color: var(--color__gray);
     font-family: var(--typography__default);
   }
   .tags {
