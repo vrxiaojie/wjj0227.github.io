@@ -17,7 +17,8 @@ body.dark  {
     color: var(--color__gray--light)
   }
   code, pre {
-    color: var(--color__red--dark);
+    color: var(--color__black--light);
+    color: var(--color__white--dark);
     font-family: var(--typography__default);
   }
   .tags {
