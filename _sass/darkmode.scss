@@ -13,11 +13,8 @@ body.dark  {
     color: var(--color__gray--light);
   }
   blockquote {
-    border-left: 5px solid var(--color__red--light);
-    color: var(--color__blue--light) 
-
-    border-left: 5px solid var(--color__red--dark);
-    color: var(--color__blue--dark)
+    border-left: 5px solid var(--color__red);
+    color: var(--color__blue) 
   }
   code, pre {
     color: var(--color__white);
